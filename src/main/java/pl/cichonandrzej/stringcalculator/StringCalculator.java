@@ -11,9 +11,6 @@ public class StringCalculator {
     private StringCalculator() {
     }
 
-    /**
-     * lol
-     */
     private static final List<Character> ALLOWED_OPERATIONS = Arrays.stream(Operation.values()).map(Operation::getSymbol).toList();
     private static final List<Integer> ORDER_PRECEDENCES = Arrays.stream(Operation.values())
             .map(Operation::getOrder)
